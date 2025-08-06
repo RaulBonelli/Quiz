@@ -1,0 +1,137 @@
+*{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'cu', sans-serif;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f8ff;
+      height: 100%;
+      background: #84b6f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-size: 300px;
+      background-position: 70px;
+      background-repeat: repeat;
+      animation: infinite backgroundPokemon 1000s linear;
+      background-blend-mode:hard-light;
+    }
+    @keyframes backgroundPokemon {
+      0% { background-position: 0% 0; }
+      100% { background-position: 10000% 0px; }
+      
+    }
+    .question {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+    @font-face {
+      font-family: "cu";
+      src: url(../IMG/PixelatedEleganceRegular-ovyAA.ttf)
+        format("truetype");
+      font-weight: normal;
+      font-style: normal;
+    }
+    .rotomdex{
+        background-image: url(../IMG/2.png);
+        background-size: cover;
+        margin: 0px;
+        height: 750px;
+        width: 375px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        background-color: #f0f8ff;
+        box-shadow: 0px 0px 900px rgba(0, 0, 0, 0.5);
+        border: black 2px solid;
+        
+    }
+    h1 {
+      text-align: center;;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    .quiz-container {
+     
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      height: 430px;
+    }
+
+    .options button {
+       
+      display: block;
+      width: 100%;
+      margin: 8px 0;
+      padding: 10px;
+      font-size: 1rem;
+      cursor: pointer;
+       
+      background-size: 60px;
+      background-position: 500px;
+  background-repeat: repeat;
+  background-position: start;
+    animation: infinite backgroundAnimation 10s linear;
+      border-radius: 10px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+
+    }
+    @keyframes backgroundAnimation {
+      0% { background-position: 0 0; }
+      100% { background-position: -100px 200px; }
+      
+    }
+      .option-0 {
+  color: white;
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  border-radius: 10px;
+
+}
+
+.option-1 {
+  background-color: #77dd77;
+  color: black;
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  border-radius: 10px;
+}
+
+.option-2 {
+  background-color: #fdfd96;
+  color: black;
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  border-radius: 10px;
+}
+
+.option-3 {
+  background-color: #84b6f4;
+  color: white;
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  border-radius: 10px;
+}
+    .result {
+      margin-top: 20px;
+      font-weight: bold;
+      
+    }
+    .next {
+      margin-top: 15px;
+      display: none;
+      position: absolute;
+      bottom: 50px;
+      right:50px ;
+      background-color: black;
+      color: white;
+      width: 200px;
+      height: 200px;
+    }
